@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altspin - Altspin Giriş - Altspin Güncel Giriş</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Altspin platformuna güvenli ve hızlı giriş yapın. Modern arayüz, güvenli bağlantı ve mobil uyumlu tasarım ile en iyi deneyimi yaşayın.">
+    <meta name="keywords" content="altspin, altspin giriş, altspin güncel, platform giriş, güvenli giriş, mobil uyumlu">
+    <meta name="author" content="Altspin">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Turkish">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Altspin - Altspin Giriş - Altspin Güncel Giriş">
+    <meta property="og:description" content="Altspin platformuna güvenli ve hızlı giriş yapın. Modern arayüz, güvenli bağlantı ve mobil uyumlu tasarım ile en iyi deneyimi yaşayın.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://altspin.com">
+    <meta property="og:site_name" content="Altspin">
+    <meta property="og:locale" content="tr_TR">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Altspin - Altspin Giriş - Altspin Güncel Giriş">
+    <meta name="twitter:description" content="Altspin platformuna güvenli ve hızlı giriş yapın. Modern arayüz, güvenli bağlantı ve mobil uyumlu tasarım ile en iyi deneyimi yaşayın.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://altspin.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Altspin",
+        "url": "https://altspin.com",
+        "description": "Altspin platformuna güvenli ve hızlı giriş yapın. Modern arayüz, güvenli bağlantı ve mobil uyumlu tasarım ile en iyi deneyimi yaşayın.",
+        "inLanguage": "tr",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://altspin.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+            min-height: 100vh;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .container {
+            background: rgba(30, 30, 30, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0, 255, 0, 0.1);
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #00ff88, #00cc66, #00aa44);
+        }
+
+        .logo {
+            font-size: 4rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #00ff88, #00cc66, #00aa44);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            color: #ccc;
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section {
+            margin: 50px 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .feature-card {
+            background: rgba(40, 40, 40, 0.8);
+            padding: 30px 20px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #00ff88;
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+            background: rgba(50, 50, 50, 0.9);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .feature-description {
+            color: #ccc;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .stats-section {
+            background: linear-gradient(135deg, #00ff88, #00cc66, #00aa44);
+            color: #000;
+            padding: 60px 40px;
+            border-radius: 20px;
+            margin: 60px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #e1e5e9;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #00ff88, #00cc66, #00aa44);
+            color: #000;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 255, 136, 0.4);
+        }
+
+        .login-btn:active {
+            transform: translateY(0);
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 25px 0;
+            color: #999;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #e1e5e9;
+        }
+
+        .divider span {
+            padding: 0 20px;
+            font-size: 0.9rem;
+        }
+
+        .social-login {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .social-btn {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #555;
+            border-radius: 12px;
+            background: rgba(40, 40, 40, 0.8);
+            color: #ccc;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .social-btn:hover {
+            border-color: #00ff88;
+            color: #00ff88;
+            transform: translateY(-1px);
+            background: rgba(50, 50, 50, 0.9);
+        }
+
+        .forgot-password {
+            color: #00ff88;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .forgot-password:hover {
+            color: #00cc66;
+        }
+
+        .register-link {
+            margin-top: 25px;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .register-link a {
+            color: #00ff88;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .register-link a:hover {
+            color: #00cc66;
+        }
+
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 255, 136, 0.1);
+            color: #00ff88;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            border: 1px solid rgba(0, 255, 136, 0.3);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: #00ff88;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-2px);
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .feature-text {
+            font-size: 0.8rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .social-login {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="container">
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span>Güncel Giriş Aktif</span>
+            </div>
+            
+            <h1 class="logo">Altspin</h1>
+            <h2 class="main-title">Modern Platform Deneyimi</h2>
+            <p class="subtitle">Güvenli, hızlı ve kullanıcı dostu arayüz ile en iyi deneyimi yaşayın. Mobil ve masaüstü uyumlu tasarım ile her yerden erişim sağlayın.</p>
+            
+            <div class="cta-section">
+                <button class="login-btn">Hemen Başla</button>
+                <p style="margin-top: 15px; color: #ccc; font-size: 0.9rem;">Ücretsiz hesap oluşturun ve hemen deneyimleyin</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🔒</span>
+                    <h3 class="feature-title">Güvenli Bağlantı</h3>
+                    <p class="feature-description">En yüksek güvenlik standartları ile verileriniz korunur ve şifrelenir.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3 class="feature-title">Hızlı Erişim</h3>
+                    <p class="feature-description">Optimize edilmiş altyapı sayesinde saniyeler içinde yükleme.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">📱</span>
+                    <h3 class="feature-title">Mobil Uyumlu</h3>
+                    <p class="feature-description">Tüm cihazlarda mükemmel görünüm ve kullanım deneyimi.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🛡️</span>
+                    <h3 class="feature-title">Korumalı Platform</h3>
+                    <p class="feature-description">Gelişmiş güvenlik önlemleri ile tam koruma sağlanır.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🌐</span>
+                    <h3 class="feature-title">7/24 Erişim</h3>
+                    <p class="feature-description">Kesintisiz hizmet ile istediğiniz zaman erişim sağlayın.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">💎</span>
+                    <h3 class="feature-title">Premium Kalite</h3>
+                    <p class="feature-description">En yüksek kalite standartlarında hizmet ve deneyim.</p>
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <h2 style="font-size: 2.5rem; margin-bottom: 50px; font-weight: 600;">Rakamlarla Altspin</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>10K+</h3>
+                        <p>Aktif Kullanıcı</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>99.9%</h3>
+                        <p>Uptime Oranı</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Destek Hizmeti</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5★</h3>
+                        <p>Kullanıcı Memnuniyeti</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
